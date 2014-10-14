@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Kajile</title>
+	<title></title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,48 +11,106 @@
 <div id="menu">
 <div class="logo"></div>
 <div class="holder">
-	<!--<a data-menuanchor="page1" href="#page1">Inicio</a>
+	<a data-menuanchor="page1" href="#page1">Inicio</a>
 	<a data-menuanchor="page1" href="#page2">Kajile</a>
 	<a data-menuanchor="page1" href="#page3">Departamentos</a>
-	<a data-menuanchor="page1" href="#page4">Contacto</a>-->
+	<a data-menuanchor="page1" href="#page4">Contacto</a>
 </div>
 </div>
 	<div id="pagepiling">
 	    <div class="section" id="section1">
 	    	   <div class="texto">
-		    	   <!-- <h1>kajile zibatán</h1>
+		    	 <h1>kajile zibatá</h1>
 		    	    <br>
-					<p>vive la experiencia</p>-->
+					<p>vive la experiencia</p>
 	    	    </div>
 			<a href="#page2"><span class="box">
 			</span></a>
-	    <div id="slider" style="background-image:url('css/img/1.jpg')">
+		    <div id="slider">
 
-	    </div>
+		    </div>
 	    </div>
 	    <div class="section" id="section2">
-				<h1>texto2</h1>
+	    <div class="text">
+	    	<h1>bla bla bla bla bla bla bla</h1>
+	    	<span>II</span>
+	    	<p>bla bla bla bla bla bla bla bla</p>
+	    </div>
+	    	<div id="gallery">
+	    		<div class="pic" style="background-image:url('css/img/1.jpg');">
+					<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+	    		</div>
+		    	<div class="pic" style="background-image:url('css/img/2.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+		    	</div>
+	    		<div class="pic" style="background-image:url('css/img/3.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+	    		</div>
+	    		<div class="pic" style="background-image:url('css/img/4.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+	    		</div>
+	    		<div class="pic" style="background-image:url('css/img/5.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+	    		</div>
+		    	<div class="pic" style="background-image:url('css/img/6.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+		    	</div>
+	    		<div class="pic" style="background-image:url('css/img/7.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>
+	    		</div>
+    			<div class="pic" style="background-image:url('css/img/8.jpg');">
+		    		<div class="caption" style="display: none;">
+						<p>texto texto texto texto</p>
+					</div>	
+	    		</div>
 	    	</div>
 	    </div>
 	    <div class="section" id="section3">
-	    	<div class="intro">
-	    		<h1>Configurable</h1>
-	    		<p>Plenty of options, methods and callbacks to use.</p>
-	    		<div id="colors2"></div>
-	    		<div id="colors3"></div>
-	    	</div>
+			<div id="house">
+			<!--P4-->
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<!--P3-->
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<!--P2-->
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<!--P1-->
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+			<!--PB-->
+			<div class="all"></div>
+			</div>
 	    </div>
 	    <div class="section" id="section4">
-	    	<div class="intro">
-	    		<h1>Compatible</h1>
-	    		<p>Designed to work on tablet and mobile devices.</p>
-	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
-	    	</div>
+			<div class="reference">
+			
+			</div>
 	    </div>
 	</div>
 </body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/jquery.pagepiling.js"></script>
+	<script src="js/jquery.hoverGrid.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
 
@@ -62,10 +120,10 @@
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['black', '#ee005a', '#2C3E50', '#39C'],
+			    sectionsColor: ['#fff', '#ECECEC', '#444444', 'black'],
 			    navigation: {
 			    	'position': 'right',
-			   		'tooltips': ['Inico', 'Page 2', 'Page 3', 'Pgae 4']
+			   		'tooltips': ['Inico', 'Page 2', 'Inmuebles', 'Pgae 4']
 			   	},
 			    afterRender: function(){
 			    	$('#pp-nav').addClass('custom');
@@ -96,7 +154,7 @@
     </script>
     <script>
 jQuery(window).load(function(){
-    var images = ['css/img/1.jpg','css/img/2.jpg', 'css/img/3.jpg', 'css/img/4.jpg', 'css/img/5.jpg', 'css/img/6.jpg'];
+    var images = ['css/img/1.jpg','css/img/2.jpg', 'css/img/3.jpg', 'css/img/4.jpg', 'css/img/5.jpg', 'css/img/6.jpg', 'css/img/7.jpg', 'css/img/8.jpg', 'css/img/9.jpg', 'css/img/10.jpg', 'css/img/11.jpg' , 'css/img/12.jpg', 'css/img/13.jpg', 'css/img/14.jpg'];
     var i = 0;
     var timeoutVar;
 
@@ -116,4 +174,10 @@ jQuery(window).load(function(){
     changeBackground();        
 });
     </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#gallery').hoverGrid();
+    });
+</script>
 </html>

@@ -5,8 +5,8 @@ box-shadow()
 	-webkit-box-shadow arguments 
 	-moz-box-shadow arguments
 	box-shadow arguments
-DarkRed = #a70000;
-DarkGrey = #444444;
+DarkRed = #a70000
+DarkGrey = #444444
 *
 	font-family 'Pontano Sans', sans-serif
 #menu
@@ -24,7 +24,7 @@ DarkGrey = #444444;
 		height 100%
 		z-index 90
 		vertical-align middle
-		//background-image url('img/kajile.png')
+		background-image url('img/kajile.png')
 		background-repeat no-repeat
 		background-position center
 		background-size 30%
@@ -61,9 +61,11 @@ DarkGrey = #444444;
 		h1
 			z-index 77
 			color #fff
+			text-shadow 2px 2px black
 		p 
 			color #fff
 			z-index 77
+			text-shadow 2px 2px black
 	.box 
 		width 100px
 		min-width 70px
@@ -84,13 +86,89 @@ DarkGrey = #444444;
 		background-position center
 		width 100%
 		height 100%
-	#texto	
+#section2
+	.text 
+		color black
 		width 80%
-		min-height 100px
-		max-height 250px
+		margin 0px
+		margin-left 10%
+		height auto
 		position absolute
-		top 40%
-		right 10%
-		bakcground-color rgba(0,0,0,.4)
+		top 150px
 		h1
-			color #ffff
+			color black
+			text-shadow 2px 2px #fff
+			marign 0px
+			font-size 3vw
+		p 
+			color black
+			text-shadow 2px 2px #fff
+			marign 0px
+			font-size 1vw
+		span 
+			&:after, &:before
+				content url('img/border.png')
+	#gallery
+		width 100%
+		height 43%
+		background-color rgba(255,255,255, .3)
+		position absolute
+		bottom 0px
+		.pic 
+			width 24%
+			height 50%
+			display inline-block
+			font-size 0px
+			vertical-align middle
+			margin-left -5px
+			background-position center
+			background-size cover
+			border 1px solid black
+	.hover-grid 
+		.hover-grid-item 
+			width  100%
+			height  100%
+			overflow hidden
+			position relative
+			cursor default
+			.caption 
+				background-color  rgba(44,44,44,.5)
+				width 100%
+				height 100%
+				color  #fff
+				display none
+				p 
+					position absolute
+					top 35%
+					font-size  15px
+					text-shadow 2px 2px DarkGrey
+					color  #fff
+					left 2%
+#section3
+	#house
+		background-color green
+		width 80%
+		height 80%
+		margin-left 10%
+		z-index 9999
+		.all
+			width 100%
+			height 13.5%
+			background-color yellow
+		.row 
+			display inline-block 
+			width 32%
+			height 13.5%
+			background-color cyan
+#section4
+	background-image url('img/5.jpg')
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+	#reference 
+		width 100%
+		height 100%
+		position absolute
+		background-color DarkGrey
+		opacity .5
+
