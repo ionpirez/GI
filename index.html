@@ -2,120 +2,36 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>GI</title>
+	<title>Kajile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/example.css">
-	<link rel="stylesheet" href="css/jquery.pagepiling.css">
 </head>
-<style>
-	    <style>
-    /* Section 1
-	 * --------------------------------------- */
-	#section1 h1{
-		color: #444;
-	}
-	#section1 p{
-		color: #333;
-		color: rgba(0,0,0,0.3);
-	}
-	#section1 img{
-		margin: 20px 0;
-		opacity: 0.7;
-	}
-
-	/* Section 2
-	 * --------------------------------------- */
-	#section2 h1,
-	#section2 p{
-		z-index: 3;
-	}
-	#section2 p{
-		opacity: 0.8;
-	}
-
-	#section2 #colors{
-		right: 60px;
-		bottom: 0;
-		position: absolute;
-		height: 413px;
-		width: 258px;
-		background-image: url(imgs/colors.gif);
-		background-repeat: no-repeat;
-	}
-
-	/* Section 3
-	 * --------------------------------------- */
-	#section3 #colors{
-		left: 60px;
-		bottom: 0;
-	}
-	#section3 p{
-		color: #757575;
-	}
-
-	#colors2,
-	#colors3{
-		position: absolute;
-		height: 163px;
-		width: 362px;
-		z-index: 1;
-		background-repeat: no-repeat;
-		left: 0;
-		margin: 0 auto;
-		right: 0;
-	}
-	#colors2{
-		background-image: url(imgs/colors2.gif);
-		top:0;
-	}
-	#colors3{
-		background-image: url(imgs/colors3.gif);
-		bottom:0;
-	}
-
-	/* Section 4
-	 * --------------------------------------- */
-	#section4 p{
-		opacity: 0.6;
-	}
-
-	/* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-	#pp-nav.custom .pp-tooltip{
-		color: #AAA;
-	}
-	#markup{
-		display: block;
-		width: 450px;
-		margin: 20px auto;
-		text-align: left;
-	}
-
-</style>
 <body>
-		<ul id="menu">
-		<li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
-		<li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
-		<li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
-		<li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
-	</ul>
+
+<div id="menu">
+<div class="logo"></div>
+<div class="holder">
+	<!--<a data-menuanchor="page1" href="#page1">Inicio</a>
+	<a data-menuanchor="page1" href="#page2">Kajile</a>
+	<a data-menuanchor="page1" href="#page3">Departamentos</a>
+	<a data-menuanchor="page1" href="#page4">Contacto</a>-->
+</div>
+</div>
 	<div id="pagepiling">
 	    <div class="section" id="section1">
-	    	<h1>pagePiling.js</h1>
-			<p>Create an original scrolling site</p>
-			<img src="imgs/pagePiling-plugin.gif" alt="pagePiling" />
-			<br />
+	    	   <div class="texto">
+		    	   <!-- <h1>kajile zibatán</h1>
+		    	    <br>
+					<p>vive la experiencia</p>-->
+	    	    </div>
+			<a href="#page2"><span class="box">
+			</span></a>
+	    <div id="slider" style="background-image:url('css/img/1.jpg')">
 
 	    </div>
+	    </div>
 	    <div class="section" id="section2">
-	    	<div class="intro">
-	    		<div id="colors"></div>
-	    		<h1>jQuery plugin</h1>
-	    		<p>Pile your sections one over another and access them scrolling or by URL!</p>
-	    		<div id="markup">
-	    			<script src="https://gist.github.com/alvarotrigo/4a87a4b8757d87df8a72.js"></script>
-	    		</div>
+				<h1>texto2</h1>
 	    	</div>
 	    </div>
 	    <div class="section" id="section3">
@@ -146,10 +62,10 @@
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4'],
-			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+			    sectionsColor: ['black', '#ee005a', '#2C3E50', '#39C'],
 			    navigation: {
 			    	'position': 'right',
-			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
+			   		'tooltips': ['Inico', 'Page 2', 'Page 3', 'Pgae 4']
 			   	},
 			    afterRender: function(){
 			    	$('#pp-nav').addClass('custom');
@@ -177,5 +93,27 @@
 				$('#examplesList').hide();
 			});
 	    });
+    </script>
+    <script>
+jQuery(window).load(function(){
+    var images = ['css/img/1.jpg','css/img/2.jpg', 'css/img/3.jpg', 'css/img/4.jpg', 'css/img/5.jpg', 'css/img/6.jpg'];
+    var i = 0;
+    var timeoutVar;
+
+    function changeBackground() {
+        clearTimeout(timeoutVar);
+        $('#slider').fadeOut('slow', function() {
+			jQuery('#slider').css('background-image', function() {
+				if (i >= images.length) {
+				    i=0;
+			}
+			return 'url(' + images[i++] + ')';      
+			});
+        });
+        $('#slider').fadeIn('slow');
+        timeoutVar = setTimeout(changeBackground, 7000);
+    }
+    changeBackground();        
+});
     </script>
 </html>

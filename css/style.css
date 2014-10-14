@@ -1,21 +1,105 @@
-h1 {
+@import 'reset.css';
+@import 'jquery.pagepiling.css';
+@import 'url(http://fonts.googleapis.com/css?family=Pontano+Sans)';
+* {
+  font-family: 'Pontano Sans', sans-serif;
+}
+#menu {
+  width: 100%;
+  min-height: 70px;
+  z-index: 77;
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 2px solid #a70000;
+  -webkit-box-shadow: -3px 3px 1px 0px rgba(167,0,0,0.07);
+  -moz-box-shadow: -3px 3px 1px 0px rgba(167,0,0,0.07);
+  box-shadow: -3px 3px 1px 0px rgba(167,0,0,0.07);
+}
+#menu .logo {
+  width: 300px;
+  position: absolute;
+  height: 100%;
+  z-index: 90;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+#menu .holder {
+  width: 70%;
+  float: right;
+  height: 100%;
+  font-size: 0px;
+  z-index: 90;
+  margin-top: 1.5%;
+  height: 65%;
+  text-align: right;
+  margin-right: 30px;
+}
+#menu .holder a {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1%;
+  color: #444;
+}
+#menu .holder a:hover {
+  text-decoration: underline;
+  color: #a70000;
+}
+#section1 .texto {
+  position: absolute;
+  width: 50%;
+  margin-left: 25%;
+  top: 40%;
+  background-color: rgba(0,0,0,0.05);
+  z-index: 70;
+  display: block;
+  min-width: 300px;
+  -webkit-box-shadow: -3px 8px 8px 4px rgba(255,255,255,0.07);
+  -moz-box-shadow: -3px 8px 8px 4px rgba(255,255,255,0.07);
+  box-shadow: -3px 8px 8px 4px rgba(255,255,255,0.07);
+}
+#section1 .texto h1 {
+  z-index: 77;
   color: #fff;
 }
-#header,
-#footer {
-  position: fixed;
-  height: 50px;
-  display: block;
-  width: 100%;
-  background: #333;
-  z-index: 9;
-  text-align: center;
-  color: #f2f2f2;
-  padding: 20px 0 0 0;
+#section1 .texto p {
+  color: #fff;
+  z-index: 77;
 }
-#header {
-  top: 0px;
-}
-#footer {
+#section1 .box {
+  width: 100px;
+  min-width: 70px;
+  height: 110px;
+  position: absolute;
   bottom: 0px;
+  left: 47%;
+  background-color: #000;
+  background-color: rgba(167,0,0,0.8);
+  z-index: 70;
+  background-image: url("img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center !important;
+}
+#section1 #slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+#section1 #texto {
+  width: 80%;
+  min-height: 100px;
+  max-height: 250px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  bakcground-color: rgba(0,0,0,0.4);
+}
+#section1 #texto h1 {
+  color: #fff;
 }
