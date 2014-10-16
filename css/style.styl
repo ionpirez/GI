@@ -8,6 +8,7 @@ box-shadow()
 	box-shadow arguments
 DarkRed = #a70000
 DarkGrey = #444444
+Boones = #ECECEC
 *
 	font-family 'Pontano Sans', sans-serif
 #menu
@@ -24,11 +25,12 @@ DarkGrey = #444444
 		position absolute
 		height 100%
 		z-index 90
-		vertical-align middle
 		//background-image url('img/kajile.png')
 		background-repeat no-repeat
 		background-position center
 		background-size 30%
+	#menu-mob
+		display none
 	.holder
 		width 70%
 		float right
@@ -116,15 +118,14 @@ DarkGrey = #444444
 		position absolute
 		bottom 0px
 		.pic 
-			width 24%
+			width 25%
+			float left
 			height 50%
 			display inline-block
 			font-size 0px
 			vertical-align middle
-			margin-left -5px
 			background-position center
 			background-size cover
-			border 1px solid black
 	.hover-grid 
 		.hover-grid-item 
 			width  100%
@@ -207,6 +208,63 @@ DarkGrey = #444444
 	background-size cover
 	background-position center
 	background-repeat no-repeat
+	#text
+		width 80%
+		height 50%
+		margin-left 10%
+		background-color rgba(68,68,68,0.4)
+		padding 10px
+		text-align center
+		h1
+			color DarkRed
+			text-shadow 2px 2px DarkGrey
+			marign 0px
+			font-size 30px
+			font-size 3vw
+			display block
+			margin-top 2%
+			margin-bottom 3%
+		.box
+			display inline-block
+			width 33.33%
+			float left
+			text-align center
+			span
+				color DarkRed
+				marign 0px
+				font-size 16px
+				font-size 1.5vw
+				margin-top 25%
+			.visitanos
+				width 100%
+				height 40px
+				background-image url('img/ubicacion.png')
+				background-repeat no-repeat
+				display block 
+				background-size 10%
+				background-position center
+			.llamanos
+				width 100%
+				height 40px
+				background-image url('img/telefono.png')
+				background-repeat no-repeat
+				display block 
+				background-size 7%
+				background-position center
+			.escribenos
+				width 100%
+				height 40px
+				background-image url('img/mail.png')
+				background-repeat no-repeat
+				display block 
+				background-size 7%
+				background-position center
+			p 
+				color #fff
+				opacity 1
+				margin-top 2%
+				font-size 13px
+				font-size 1.3wv
 @css{
 	.view {
 	   width: 100%;
@@ -366,3 +424,57 @@ DarkGrey = #444444
 	}
 		
 	}
+//pedo responsivo
+
+@media all and (max-width: 700px) and (min-width: 0px)
+	#menu
+		width 100%
+		max-height 50px
+		min-height 50px
+		display block
+		.logo
+			width 70px
+			height 50px
+			background-size 70%
+			background-position center left
+		#menu-mob
+			display block
+			background-image url('img/menu.png')
+			background-position center
+			background-repeat no-repeat
+			background-size 30px
+			width 50px
+			height 50px
+			float right
+			margin-right 5px
+		.holder
+			display none
+			width 100%
+			position absolute
+			top 40px
+			left -1% 
+			height 30%
+			text-align center
+			z-index 9999
+			a 
+				width 100%
+				padding-top 20px
+				padding-bottom 20px
+				color DarkRed
+				border-bottom 2px solid DarkRed
+				border-top 2px solid DarkRed
+				background-color #fff
+				padding-right 30px
+				&:hover
+					text-decoration none
+					background-color Boones
+	#section2
+		#gallery
+			.pic 
+				display none !important
+				display block
+				width 200px
+				height 200px
+				&:first-child
+					display block
+
