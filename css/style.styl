@@ -25,7 +25,7 @@ Boones = #ECECEC
 		position absolute
 		height 100%
 		z-index 90
-		//background-image url('img/kajile.png')
+		background-image url('img/kajile.png')
 		background-repeat no-repeat
 		background-position center
 		background-size 30%
@@ -113,9 +113,9 @@ Boones = #ECECEC
 				content url('img/border.png')
 	#gallery
 		width 100%
-		height 43%
 		background-color rgba(255,255,255, .3)
 		position absolute
+		height 45%
 		bottom 0px
 		.pic 
 			width 25%
@@ -433,9 +433,10 @@ Boones = #ECECEC
 		min-height 50px
 		display block
 		.logo
-			width 70px
+			width 87px
 			height 50px
 			background-size 70%
+			margin-left 10px
 			background-position center left
 		#menu-mob
 			display block
@@ -468,13 +469,50 @@ Boones = #ECECEC
 				&:hover
 					text-decoration none
 					background-color Boones
+
+	#section1
+		.texto
+			width 90%
+			margin-left 5%
+			top 10%
+		.box
+			left 0%
 	#section2
 		#gallery
+			position absolute
+			bottom 0px
+			a 
+				width 100%
+				height 100%
+			&:after
+				content url(img/next.png)
+				position absolute
+				z-index 1
+				right 5px
+				top 45%
+				&:hover
+					opacity .4
+			&:before 
+				content url(img/prev.png)
+				position absolute
+				z-index 1
+				left 5px
+				top 45%
+				&:hover
+					opacity .4
 			.pic 
-				display none !important
 				display block
-				width 200px
-				height 200px
-				&:first-child
-					display block
-
+				width 50%
+				height 100%
+			.do-not
+				display none
+	#pp-nav span 
+		display none
+	#section4
+		#text
+			.box
+				display block
+				float none
+				width 100%
+				span 
+					margin-top 0%

@@ -22,6 +22,7 @@
   position: absolute;
   height: 100%;
   z-index: 90;
+  background-image: url("img/kajile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -123,9 +124,9 @@
 }
 #section2 #gallery {
   width: 100%;
-  height: 43%;
   background-color: rgba(255,255,255,0.3);
   position: absolute;
+  height: 45%;
   bottom: 0px;
 }
 #section2 #gallery .pic {
@@ -457,9 +458,10 @@ a
     display: block;
   }
   #menu .logo {
-    width: 70px;
+    width: 87px;
     height: 50px;
     background-size: 70%;
+    margin-left: 10px;
     background-position: center left;
   }
   #menu #menu-mob {
@@ -497,13 +499,59 @@ a
     text-decoration: none;
     background-color: #ececec;
   }
-  #section2 #gallery .pic {
-    display: none !important;
-    display: block;
-    width: 200px;
-    height: 200px;
+  #section1 .texto {
+    width: 90%;
+    margin-left: 5%;
+    top: 10%;
   }
-  #section2 #gallery .pic:first-child {
+  #section1 .box {
+    left: 0%;
+  }
+  #section2 #gallery {
+    position: absolute;
+    bottom: 0px;
+  }
+  #section2 #gallery a {
+    width: 100%;
+    height: 100%;
+  }
+  #section2 #gallery:after {
+    content: url("img/next.png");
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: 45%;
+  }
+  #section2 #gallery:after:hover {
+    opacity: 0.4;
+  }
+  #section2 #gallery:before {
+    content: url("img/prev.png");
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    top: 45%;
+  }
+  #section2 #gallery:before:hover {
+    opacity: 0.4;
+  }
+  #section2 #gallery .pic {
     display: block;
+    width: 50%;
+    height: 100%;
+  }
+  #section2 #gallery .do-not {
+    display: none;
+  }
+  #pp-nav span {
+    display: none;
+  }
+  #section4 #text .box {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  #section4 #text .box span {
+    margin-top: 0%;
   }
 }
