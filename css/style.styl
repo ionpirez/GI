@@ -69,6 +69,7 @@ Boones = #ECECEC
 			color #fff
 			z-index 77
 			text-shadow 2px 2px black
+			font-size 1.5vw
 	.box 
 		width 100px
 		min-width 70px
@@ -147,7 +148,104 @@ Boones = #ECECEC
 					color  #fff
 					left 2%
 #section3
+	#cost 
+		display none
+		width 900px
+		height 354px
+		background-color red
+		margin 0 auto
+	#next-select
+		width 170px
+		height 80px
+		position absolute
+		bottom 0px
+		right 0px
+		background-color rgba(167, 0, 0, .8)
+		z-index 70
+		background-image url('img/arrow-right.png')
+		background-repeat no-repeat
+		background-size 30%
+		background-position center !important
+		p
+			color #fff
+	#back-select
+		width 170px
+		height 80px
+		position absolute
+		bottom 0px
+		left 0px
+		background-color rgba(167, 0, 0, .8)
+		z-index 70
+		background-image url('img/arrow-left.png')
+		background-repeat no-repeat
+		background-size 30%
+		background-position center !important
+		display none
 	#building
+		margin 0 auto
+		background-image url('img/edificio.png')
+		width 900px
+		height 354px
+		background-repeat no-repeat
+		background-size 100%
+		position relative
+		.map-1, .map-8
+			width 108px
+			height 40px
+			position absolute
+			bottom 30px
+			left 31px
+		.map-2,.map-3, .map-4, .map-5, .map-6, .map-7
+			width 152px
+			height 40px
+			position absolute
+			bottom 73px
+			left 31px
+		.map-9, .map-10, .map-11, .map-12, .map-13
+			width 108px
+			height 40px
+			position absolute
+			bottom 73px
+			left 189px
+		.map-14, .map-15, .map-16, .map-17, .map-18
+			width 151px
+			height 40px
+			position absolute
+			bottom 73px
+			left 305px
+		.map-19, .map-20, .map-21, .map-22
+			width 107px
+			height 40px
+			position absolute
+			bottom 73px
+			left 462px
+		.map-23, .map-24, .map-25, .map-26
+			width 151px
+			height 40px
+			position absolute
+			bottom 73px
+			left 577px
+		.map-27, .map-28, .map-29
+			width 107px
+			height 40px
+			position absolute
+			bottom 73px
+			left 738px
+		.map-3, .map-10, .map-15, .map-20, .map-24, .map-28
+			bottom 118px
+		.map-4, .map-11, .map-16, .map-21, .map-25,.map-29
+			bottom 163px
+		.map-5, .map-12, .map-17, .map-22, .map-26
+			bottom 207px
+		.map-6, .map-13, .map-18
+			bottom 251px
+		.map-7
+			top 19px
+		.map-8
+			left 189px
+		.map-13,.map-22, .map-29
+			height 82px
+	/*#building
 		margin 100px auto
 		width 487px
 		height 534px
@@ -202,7 +300,7 @@ Boones = #ECECEC
 				 padding 0px
 				 float left
 				 text-align center
-				 vertical-align center
+				 vertical-align center*/
 #section4
 	background-image url('img/5.jpg')
 	background-size cover
@@ -215,15 +313,14 @@ Boones = #ECECEC
 		background-color rgba(68,68,68,0.4)
 		padding 10px
 		text-align center
-		h1
-			color DarkRed
+		p
+			color #fff
 			text-shadow 2px 2px DarkGrey
-			marign 0px
-			font-size 30px
-			font-size 3vw
-			display block
-			margin-top 2%
-			margin-bottom 3%
+			font-size 1.4vw
+			opacity 1
+			padding-top 10px
+			width 70%
+			margin-left 15%
 		.box
 			display inline-block
 			width 33.33%
@@ -234,7 +331,7 @@ Boones = #ECECEC
 				marign 0px
 				font-size 16px
 				font-size 1.5vw
-				margin-top 25%
+				margin-top 10%
 			.visitanos
 				width 100%
 				height 40px
@@ -317,8 +414,8 @@ Boones = #ECECEC
 	   -webkit-box-shadow: 0 0 1px #000;
 	   -moz-box-shadow: 0 0 1px #000;
 	   box-shadow: 0 0 1px #000;
-	   margin-top:30px;
-	   font-size:14px;
+	   margin-top:5px;
+	   font-size:10px;
 	}
 	.view a.info: hover {
 	   -webkit-box-shadow: 0 0 5px #000;
@@ -474,10 +571,19 @@ Boones = #ECECEC
 		.texto
 			width 90%
 			margin-left 5%
+			h1
+				font-size 12vw
+				margin-top 30px
+			p 
+				font-size 5vw
 			top 10%
 		.box
 			left 0%
 	#section2
+		.text 
+			top 24px
+			p
+				font-size 3.3vw
 		#gallery
 			position absolute
 			bottom 0px
@@ -510,9 +616,15 @@ Boones = #ECECEC
 		display none
 	#section4
 		#text
+			height 80%
+			position absolute
+			bottom 0px
+			p 
+				font-size 4vw
 			.box
 				display block
 				float none
 				width 100%
 				span 
 					margin-top 0%
+					font-size 5vw

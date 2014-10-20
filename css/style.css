@@ -74,6 +74,7 @@
   color: #fff;
   z-index: 77;
   text-shadow: 2px 2px #000;
+  font-size: 1.5vw;
 }
 #section1 .box {
   width: 100px;
@@ -161,67 +162,161 @@
   color: #fff;
   left: 2%;
 }
-#section3 #building {
-  margin: 100px auto;
-  width: 487px;
-  height: 534px;
-}
-#section3 #building #inner {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-#section3 #building #inner .full {
-  width: 100%;
-  height: 14.28%;
-  display: inline-block;
+#section3 #cost {
+  display: none;
+  width: 900px;
+  height: 354px;
   background-color: #f00;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  vertical-align: center;
+  margin: 0 auto;
 }
-#section3 #building #inner .medium {
-  width: 50%;
-  height: 14.28%;
-  display: inline-block;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  vertical-align: center;
+#section3 #next-select {
+  width: 170px;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(167,0,0,0.8);
+  z-index: 70;
+  background-image: url("img/arrow-right.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center left;
-strong
-  font-size: 1vw;
-a
-  font-size: 0.5vw;
+  background-size: 30%;
+  background-position: center !important;
 }
-#section3 #building #inner .half {
-  width: 33.33%;
-  height: 14.28%;
-  display: inline-block;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  vertical-align: center;
+#section3 #next-select p {
+  color: #fff;
 }
-#section3 #building #inner .quarter {
-  width: 16.66%;
-  height: 14.28%;
-  display: inline-block;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-  text-align: center;
-  vertical-align: center;
+#section3 #back-select {
+  width: 170px;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(167,0,0,0.8);
+  z-index: 70;
+  background-image: url("img/arrow-left.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center !important;
+  display: none;
+}
+#section3 #building {
+  margin: 0 auto;
+  background-image: url("img/edificio.png");
+  width: 900px;
+  height: 354px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+#section3 #building .map-1,
+#section3 #building .map-8 {
+  width: 108px;
+  height: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 31px;
+}
+#section3 #building .map-2,
+#section3 #building .map-3,
+#section3 #building .map-4,
+#section3 #building .map-5,
+#section3 #building .map-6,
+#section3 #building .map-7 {
+  width: 152px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 31px;
+}
+#section3 #building .map-9,
+#section3 #building .map-10,
+#section3 #building .map-11,
+#section3 #building .map-12,
+#section3 #building .map-13 {
+  width: 108px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 189px;
+}
+#section3 #building .map-14,
+#section3 #building .map-15,
+#section3 #building .map-16,
+#section3 #building .map-17,
+#section3 #building .map-18 {
+  width: 151px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 305px;
+}
+#section3 #building .map-19,
+#section3 #building .map-20,
+#section3 #building .map-21,
+#section3 #building .map-22 {
+  width: 107px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 462px;
+}
+#section3 #building .map-23,
+#section3 #building .map-24,
+#section3 #building .map-25,
+#section3 #building .map-26 {
+  width: 151px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 577px;
+}
+#section3 #building .map-27,
+#section3 #building .map-28,
+#section3 #building .map-29 {
+  width: 107px;
+  height: 40px;
+  position: absolute;
+  bottom: 73px;
+  left: 738px;
+}
+#section3 #building .map-3,
+#section3 #building .map-10,
+#section3 #building .map-15,
+#section3 #building .map-20,
+#section3 #building .map-24,
+#section3 #building .map-28 {
+  bottom: 118px;
+}
+#section3 #building .map-4,
+#section3 #building .map-11,
+#section3 #building .map-16,
+#section3 #building .map-21,
+#section3 #building .map-25,
+#section3 #building .map-29 {
+  bottom: 163px;
+}
+#section3 #building .map-5,
+#section3 #building .map-12,
+#section3 #building .map-17,
+#section3 #building .map-22,
+#section3 #building .map-26 {
+  bottom: 207px;
+}
+#section3 #building .map-6,
+#section3 #building .map-13,
+#section3 #building .map-18 {
+  bottom: 251px;
+}
+#section3 #building .map-7 {
+  top: 19px;
+}
+#section3 #building .map-8 {
+  left: 189px;
+}
+#section3 #building .map-13,
+#section3 #building .map-22,
+#section3 #building .map-29 {
+  height: 82px;
 }
 #section4 {
   background-image: url("img/5.jpg");
@@ -237,15 +332,14 @@ a
   padding: 10px;
   text-align: center;
 }
-#section4 #text h1 {
-  color: #a70000;
+#section4 #text p {
+  color: #fff;
   text-shadow: 2px 2px #444;
-  marign: 0px;
-  font-size: 30px;
-  font-size: 3vw;
-  display: block;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  font-size: 1.4vw;
+  opacity: 1;
+  padding-top: 10px;
+  width: 70%;
+  margin-left: 15%;
 }
 #section4 #text .box {
   display: inline-block;
@@ -258,7 +352,7 @@ a
   marign: 0px;
   font-size: 16px;
   font-size: 1.5vw;
-  margin-top: 25%;
+  margin-top: 10%;
 }
 #section4 #text .box .visitanos {
   width: 100%;
@@ -345,8 +439,8 @@ a
 	   -webkit-box-shadow: 0 0 1px #000;
 	   -moz-box-shadow: 0 0 1px #000;
 	   box-shadow: 0 0 1px #000;
-	   margin-top:30px;
-	   font-size:14px;
+	   margin-top:5px;
+	   font-size:10px;
 	}
 	.view a.info: hover {
 	   -webkit-box-shadow: 0 0 5px #000;
@@ -504,8 +598,21 @@ a
     margin-left: 5%;
     top: 10%;
   }
+  #section1 .texto h1 {
+    font-size: 12vw;
+    margin-top: 30px;
+  }
+  #section1 .texto p {
+    font-size: 5vw;
+  }
   #section1 .box {
     left: 0%;
+  }
+  #section2 .text {
+    top: 24px;
+  }
+  #section2 .text p {
+    font-size: 3.3vw;
   }
   #section2 #gallery {
     position: absolute;
@@ -546,6 +653,14 @@ a
   #pp-nav span {
     display: none;
   }
+  #section4 #text {
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+  }
+  #section4 #text p {
+    font-size: 4vw;
+  }
   #section4 #text .box {
     display: block;
     float: none;
@@ -553,5 +668,6 @@ a
   }
   #section4 #text .box span {
     margin-top: 0%;
+    font-size: 5vw;
   }
 }
